@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui;
+    margin: 0;
+    background-color: #63dd1d;
+}
+input,textarea,button,select{
+    font: inherit;
+}
+.playground{
+    padding: 20px;
+}
+.btn{
+    all: unset;
+    outline: revert;
+    padding: 10px;
+    background-color: rgb(218, 212, 212);
+    position: relative;
+}
+.btn:before{
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: #f33e98;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 10px 0 0;
+}
+.btn::after{
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #438dce;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 10px;
+}
+</style>
+</head>
+<body>
+     <main>
+        <h1>Buttons</h1>
+        <div class="playground">
+            <button class="btn">Login</button>
+        </div>
+        <div class="playground">
+            <button class="btn">Register</button>
+        </div>
+     </main>  
+</body>
+</html>
